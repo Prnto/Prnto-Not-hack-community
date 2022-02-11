@@ -13,23 +13,37 @@ int main(void)    /* Тип данных Имя функции аргумент*/
 {
     /* Replace with your application code */
 	
-	DDRB = 0xFF; /* направление тока*/
+	DDRB = 0b00000111; /* направление тока*/
    
 	//PORTB = 0 ( 0 вольт) , = 1 (5 вольт)//
 	
                            
     while (1) /*Тело функции          (1) Условие будут повторяться  в цикле  бесконечно*/
     {
-		PORTB = 0x01;
+		PORTB = 0b00000001;
 		_delay_ms(500);
-		PORTB = 0x00;
+		PORTB = 0b0000000;
 		_delay_ms(500);
 		
+		PORTB = 0b0000010;
+		_delay_ms(500);
+		PORTB = 0b0000000;
+		_delay_ms(500);
+		
+		PORTB = 0b0000100;
+		_delay_ms(500);
+		PORTB = 0b0000000;
+		_delay_ms(500);
 	
 		
     }
 }
 
+/*int main(void)
+{
+	DDRB = 0b0000011;
+	
+}
 /*                                   Портовые регистры имеют ширину 8 БИТ!
 DDR(DDRB,DDRC,DDRD) = DATA DIRECT REGISTER регистр направления этой строки данных,кот.он будет вводить-выводить.
  
