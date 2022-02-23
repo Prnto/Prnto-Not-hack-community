@@ -39,6 +39,63 @@ int main(void)           /* Тип данных Имя функции аргумент*/
 		PORTB = 0b00000000;
 		_delay_ms(500);	
 		
+		
+			       // TIMER//
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //9
+			       PORTD = 0b00010000;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //8
+			       PORTD = 0b00000000;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //7
+			       PORTD = 0b01111000;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //6
+			       PORTD = 0b00000010;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //5
+			       PORTD = 0b00010010;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //4
+			       PORTD = 0b00011001;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //3
+			       PORTD = 0b00110000;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //2
+			       PORTD = 0b00100100;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //1
+			       PORTD = 0b01111001;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b01111111;
+			       _delay_ms(300);       //0
+			       PORTD = 0b01000000;
+			       _delay_ms(300);
+			       
+			       PORTD = 0b11111111;
+			       _delay_ms(700);       //LED-BLUE
+			       PORTD = 0b01111111;
+			       _delay_ms(1000);
     }
 }
 
